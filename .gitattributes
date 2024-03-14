@@ -1,5 +1,3 @@
-*.html linguist-vendored
-DOC/* linguist-vendored
-DOC/html/search/* linguist-vendored
-*.h linguist-language=C
+/* linguist-language=C */
 *.c linguist-language=C
+*.h linguist-language=C
