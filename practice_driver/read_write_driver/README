@@ -1,0 +1,2 @@
+in this file -> create the device file inside my kernel module not in the bash
+             -> read and write callbacks to read and write data to our driver and return back.

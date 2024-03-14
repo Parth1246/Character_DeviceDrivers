@@ -1,0 +1,1 @@
+cmd_/home/parth/devicedriver/practice_driver/ioctl/ioctl_example.mod := printf '%s\n'   ioctl_example.o | awk '!x[$$0]++ { print("/home/parth/devicedriver/practice_driver/ioctl/"$$0) }' > /home/parth/devicedriver/practice_driver/ioctl/ioctl_example.mod

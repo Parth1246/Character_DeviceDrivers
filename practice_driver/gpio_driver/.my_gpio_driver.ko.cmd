@@ -1,0 +1,1 @@
+cmd_/home/parth/devicedriver/practice_driver/gpio_driver/my_gpio_driver.ko := ld -r -m elf_x86_64 -z noexecstack --build-id=sha1  -T scripts/module.lds -o /home/parth/devicedriver/practice_driver/gpio_driver/my_gpio_driver.ko /home/parth/devicedriver/practice_driver/gpio_driver/my_gpio_driver.o /home/parth/devicedriver/practice_driver/gpio_driver/my_gpio_driver.mod.o;  true

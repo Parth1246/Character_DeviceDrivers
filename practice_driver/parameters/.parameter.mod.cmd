@@ -1,0 +1,1 @@
+cmd_/home/parth/devicedriver/practice_driver/parameters/parameter.mod := printf '%s\n'   parameter.o | awk '!x[$$0]++ { print("/home/parth/devicedriver/practice_driver/parameters/"$$0) }' > /home/parth/devicedriver/practice_driver/parameters/parameter.mod

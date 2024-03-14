@@ -1,0 +1,1 @@
+cmd_/home/parth/devicedriver/practice_driver/hello_world/modules.order := {   echo /home/parth/devicedriver/practice_driver/hello_world/mymodule.o; :; } > /home/parth/devicedriver/practice_driver/hello_world/modules.order

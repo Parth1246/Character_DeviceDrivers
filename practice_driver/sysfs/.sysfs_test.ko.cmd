@@ -1,0 +1,1 @@
+cmd_/home/parth/devicedriver/practice_driver/sysfs/sysfs_test.ko := ld -r -m elf_x86_64 -z noexecstack --build-id=sha1  -T scripts/module.lds -o /home/parth/devicedriver/practice_driver/sysfs/sysfs_test.ko /home/parth/devicedriver/practice_driver/sysfs/sysfs_test.o /home/parth/devicedriver/practice_driver/sysfs/sysfs_test.mod.o;  true

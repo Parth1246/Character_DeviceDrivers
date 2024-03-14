@@ -1,0 +1,1 @@
+cmd_/home/parth/devicedriver/practice_driver/ioctl/Module.symvers :=  scripts/mod/modpost -m -a     -o /home/parth/devicedriver/practice_driver/ioctl/Module.symvers -T /home/parth/devicedriver/practice_driver/ioctl/modules.order -i Module.symvers -e 

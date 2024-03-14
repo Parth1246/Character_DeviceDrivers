@@ -1,0 +1,1 @@
+cmd_/home/parth/devicedriver/practice_driver/dt_probe/Module.symvers :=  scripts/mod/modpost -m -a     -o /home/parth/devicedriver/practice_driver/dt_probe/Module.symvers -T /home/parth/devicedriver/practice_driver/dt_probe/modules.order -i Module.symvers -e 

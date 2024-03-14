@@ -1,0 +1,1 @@
+cmd_/home/parth/devicedriver/practice_driver/dt_probe/dt_probe.mod := printf '%s\n'   dt_probe.o | awk '!x[$$0]++ { print("/home/parth/devicedriver/practice_driver/dt_probe/"$$0) }' > /home/parth/devicedriver/practice_driver/dt_probe/dt_probe.mod

@@ -1,0 +1,1 @@
+cmd_/home/parth/devicedriver/practice_driver/hello_world/mymodule.ko := ld -r -m elf_x86_64 -z noexecstack --build-id=sha1  -T scripts/module.lds -o /home/parth/devicedriver/practice_driver/hello_world/mymodule.ko /home/parth/devicedriver/practice_driver/hello_world/mymodule.o /home/parth/devicedriver/practice_driver/hello_world/mymodule.mod.o;  true

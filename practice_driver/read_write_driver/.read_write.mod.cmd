@@ -1,0 +1,1 @@
+cmd_/home/parth/devicedriver/practice_driver/read_write_driver/read_write.mod := printf '%s\n'   read_write.o | awk '!x[$$0]++ { print("/home/parth/devicedriver/practice_driver/read_write_driver/"$$0) }' > /home/parth/devicedriver/practice_driver/read_write_driver/read_write.mod

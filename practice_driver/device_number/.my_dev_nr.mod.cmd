@@ -1,0 +1,1 @@
+cmd_/home/parth/devicedriver/practice_driver/device_number/my_dev_nr.mod := printf '%s\n'   my_dev_nr.o | awk '!x[$$0]++ { print("/home/parth/devicedriver/practice_driver/device_number/"$$0) }' > /home/parth/devicedriver/practice_driver/device_number/my_dev_nr.mod

@@ -1,0 +1,50 @@
+=>Kernel Header Files
+
+/include/linux/fs.h 
+alloc_chrdev_region(), unregister_chrdev_region()
+
+/include/linux/cdev.h
+cdev_init(), cdev_add(), cdev_del()
+
+/inlcude/linux/device.h
+device_create() device_destory() class_create() class_destroy()
+
+/inlcude/linux//uaccess.h
+copy_to_user() copy_form_user()
+
+
+
+=>Some of the Important Kernel API
+
+1: alloc_chrdev_region — register a range of char device numbers
+int alloc_chrdev_region (dev_t * dev, unsigned baseminor, unsigned count, const char * name);
+Allocates a range of char device numbers. The major number will be chosen dynamically, and returned (along with the first minor number) in dev. Returns zero or a negative error code.
+Device number is combination of MAJOR and MINOR number
+there kernel macros to get major and minor number form device number
+MAJOR(device_number) MINOR(device_number) or you can get your device number from major and minor number by MKDEV(major, minor)
+
+2: cdev_init — initialize a cdev structure
+void cdev_init (struct cdev * cdev, const struct file_operations * fops);
+Initializes cdev, remembering fops, making it ready to add to the system with cdev_add.
+
+3 : cdev_add — add a char device to the system
+cdev_add adds the device represented by p to the system, making it live immediately. A negative error code is returned on failure.
+
+4: class_create create a struct class structure
+struct class * __class_create(struct module *owner, const char *name, struct lock_class_key *key)
+
+5 : device_create - creates a device and registers it with sysfs
+struct device * device_create(struct class *class, struct device *parent, dev_t devt, void *drvdata, const char *fmt, ...)
+This function can be used by char device classes. A struct device will be created in sysfs, registered to the specified class.
+
+=>Important Structures
+
+struct file_operations {
+        struct module *owner;
+        loff_t (*llseek) (struct file *, loff_t, int);
+        ssize_t (*read) (struct file *, char __user *, size_t, loff_t *);
+        ssize_t (*write) (struct file *, const char __user *, size_t, loff_t *);
+        int (*open) (struct inode *, struct file *);
+        int (*flush) (struct file *, fl_owner_t id);
+        int (*release) (struct inode *, struct file *); 
+... };

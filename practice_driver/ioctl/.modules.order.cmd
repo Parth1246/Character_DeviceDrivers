@@ -1,0 +1,1 @@
+cmd_/home/parth/devicedriver/practice_driver/ioctl/modules.order := {   echo /home/parth/devicedriver/practice_driver/ioctl/ioctl_example.o; :; } > /home/parth/devicedriver/practice_driver/ioctl/modules.order

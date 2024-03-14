@@ -1,0 +1,1 @@
+cmd_/home/parth/devicedriver/practice_driver/procfs_driver/procfs_test.mod := printf '%s\n'   procfs_test.o | awk '!x[$$0]++ { print("/home/parth/devicedriver/practice_driver/procfs_driver/"$$0) }' > /home/parth/devicedriver/practice_driver/procfs_driver/procfs_test.mod

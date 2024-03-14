@@ -1,0 +1,1 @@
+cmd_/home/parth/devicedriver/practice_driver/gpio_irq/Module.symvers :=  scripts/mod/modpost -m -a     -o /home/parth/devicedriver/practice_driver/gpio_irq/Module.symvers -T /home/parth/devicedriver/practice_driver/gpio_irq/modules.order -i Module.symvers -e 

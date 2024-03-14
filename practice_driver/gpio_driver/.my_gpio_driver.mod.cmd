@@ -1,0 +1,1 @@
+cmd_/home/parth/devicedriver/practice_driver/gpio_driver/my_gpio_driver.mod := printf '%s\n'   my_gpio_driver.o | awk '!x[$$0]++ { print("/home/parth/devicedriver/practice_driver/gpio_driver/"$$0) }' > /home/parth/devicedriver/practice_driver/gpio_driver/my_gpio_driver.mod

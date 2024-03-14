@@ -1,0 +1,1 @@
+cmd_/home/parth/devicedriver/practice_driver/device_number/my_dev_nr.ko := ld -r -m elf_x86_64 -z noexecstack --build-id=sha1  -T scripts/module.lds -o /home/parth/devicedriver/practice_driver/device_number/my_dev_nr.ko /home/parth/devicedriver/practice_driver/device_number/my_dev_nr.o /home/parth/devicedriver/practice_driver/device_number/my_dev_nr.mod.o;  true

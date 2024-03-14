@@ -1,0 +1,32 @@
+After registering the devie one canrun below command
+
+cat /proc/device | grep <driver_name>
+
+so if it confirms that your device driver is registered and it can be used to connect device drvier and kernel over device number then you need to make device file runnig below command
+
+sudo mknod /dev/<device_driver_name> <device_driver_type> <MAJOR_NUMBER> <MINOR_NUMBER>
+
+device_driver_type = c for character
+
+later you can check by runnign below command that your file is made or not
+ls /dev/<device_driver_name> -al
+
+Now we will write a c program that will open and close the device file to see kernel lock there.
+
+in that test file, took one int variable which will return some value, it will try to open the file name fro reading only (O_RDONLY) if ti will throw -1 then the file was not accessible or not loaded at the moment of execution.
+
+so please change the permission by running the below command
+
+sudo chmod 666 /dev/<driver_name>
+
+now one can run the file (gcc file.c)
+./a.out
+
+The logs are as given below
+
+[80300.901991] Goodbye, Kenrel
+[80386.592874] Hello, Kernel!
+[80386.592882] dev_nr - reghistered Device number Major: 95, Minor: 0
+[81191.794237] dev_number -> open was called!
+[81191.794350] dev_number -> close was called!
+

@@ -1,0 +1,1 @@
+cmd_/home/parth/devicedriver/practice_driver/gpio_irq/gpio_interrupt_driver.mod := printf '%s\n'   gpio_interrupt_driver.o | awk '!x[$$0]++ { print("/home/parth/devicedriver/practice_driver/gpio_irq/"$$0) }' > /home/parth/devicedriver/practice_driver/gpio_irq/gpio_interrupt_driver.mod
